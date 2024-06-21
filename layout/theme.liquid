@@ -251,6 +251,14 @@
       }
     {% endstyle %}
 
+    {% comment %} this is to add the style of tailwindcss to the theme {% endcomment %}
+
+    {% comment %} OPTION 1 {% endcomment %}
+    {% comment %} <link rel="stylesheet" href="{{'app.css' | asset_url}}"> {% endcomment %}
+
+    {% comment %} OPTION 2 {% endcomment %}
+    {{ 'app.css' | asset_url | stylesheet_tag }}
+
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}

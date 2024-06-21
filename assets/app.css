@@ -569,9 +569,14 @@ video {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .uppercase {
   text-transform: uppercase;
